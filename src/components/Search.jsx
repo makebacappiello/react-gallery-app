@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-// Search gets the fetchData function from App as a prop
-function Search({ fetchData }) {
+// Search component needs no prop
+function Search() {
   // Store the text typed in the box, starting empty
   const [query, setQuery] = useState("");
 
@@ -13,9 +13,6 @@ function Search({ fetchData }) {
   const handleSubmit = (e) => {
     // Stop the page from reloading
     e.preventDefault();
-
-    // Ask App to fetch photos for the typed text
-    fetchData(query);
 
     // Send the user to the search route for that text
     navigate(`/search/${query}`);
@@ -35,6 +32,7 @@ function Search({ fetchData }) {
         placeholder="Search"
         required
         // Show the current text from state
+
         value={query}
         // Update state every time the user types
         onChange={(e) => setQuery(e.target.value)}

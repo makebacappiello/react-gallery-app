@@ -1,4 +1,21 @@
-# React + Vite
+# React Gallery App
+
+An image gallery built with React, Vite and React Router. It shows photos from the Pixabay API for three default topics (cats, dogs, computers) and for any word the user searches.
+
+## Setup
+
+1. Run `npm install`.
+2. Create a file called `config.js` inside the `src` folder.
+3. Put this in it, using your own Pixabay API key:
+
+```js
+const apiKey = "YOUR API KEY";
+export default apiKey;
+```
+
+4. Run `npm run dev` and open the address it prints.
+
+`src/config.js` is listed in `.gitignore`, so your key is never uploaded to GitHub.# React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
