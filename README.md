@@ -15,7 +15,9 @@ export default apiKey;
 
 4. Run `npm run dev` and open the address it prints.
 
-`src/config.js` is listed in `.gitignore`, so your key is never uploaded to GitHub.# React + Vite
+`src/config.js` is listed in `.gitignore`, so your key is never uploaded to GitHub.
+
+# React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
