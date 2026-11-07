@@ -1,4 +1,5 @@
 import SearchResults from "./components/SearchResults";
+import NotFound from "./components/NotFound";
 import { useState, useEffect } from "react";
 import Nav from "./components/Nav";
 import { Routes, Route, Navigate } from "react-router-dom";
@@ -110,6 +111,8 @@ function App() {
             />
           }
         />
+        {/* The * matches any URL that no other route matched, so show the 404 page */}
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </div>
   );
